@@ -1,17 +1,12 @@
 ﻿//Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
 Console.Clear();
-
-Console.Write("Введите m: ");
+Console.Write("Введите количество строк: ");
 int m = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите n: ");
+Console.Write("Введите количество столбцов: ");
 int n = Convert.ToInt32(Console.ReadLine());
-
 double[,] array = new double[m, n];
-
 CreateArrayDouble(array);
-
 WriteArray(array);
-
 Console.WriteLine();
 
 void CreateArrayDouble(double[,] array)
