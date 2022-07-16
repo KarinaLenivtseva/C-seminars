@@ -27,8 +27,8 @@ void WriteArray(double[,] array)
     {
         for (int j = 0; j < n; j++)
         {
-            double alignNumber = Math.Round(array[i, j], 1);
-            Console.Write(alignNumber + " ");
+            double lining = Math.Round(array[i, j], 1);
+            Console.Write(lining + " ");
         }
         Console.WriteLine();
     }
