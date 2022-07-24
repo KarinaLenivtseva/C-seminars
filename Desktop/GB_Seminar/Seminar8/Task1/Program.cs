@@ -12,10 +12,10 @@ CreateArray(array);
 WriteArray(array);
 
 Console.WriteLine($"\nОтсортированный массив: ");
-OrderArrayLines(array);
+ArrayLines(array);
 WriteArray(array);
 
-void OrderArrayLines(int[,] array)
+void ArrayLines(int[,] array)
 {
   for (int i = 0; i < array.GetLength(0); i++)
   {
@@ -25,9 +25,9 @@ void OrderArrayLines(int[,] array)
       {
         if (array[i, k] < array[i, k + 1])
         {
-          int temp = array[i, k + 1];
+          int visual = array[i, k + 1];
           array[i, k + 1] = array[i, k];
-          array[i, k] = temp;
+          array[i, k] = visual;
         }
       }
     }
